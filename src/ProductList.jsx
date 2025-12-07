@@ -252,7 +252,8 @@ function ProductList({ onHomeClick }) {
         setShowCart(false); // Hide the cart when navigating to About Us
     };
 
-    const handleContinueShopping = () => {
+    const handleContinueShopping = (e) => {
+        if (e) e.preventDefault();
         setShowCart(false);
     };
 
